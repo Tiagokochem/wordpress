@@ -30,7 +30,7 @@ O arquivo `functions.php` foi modificado para adicionar funcionalidades personal
 4. Acesse `http://localhost:8000` para configurar o WordPress.
 5. Adicione as linhas que estão no arquivo functions.php para o arquivo com o mesmo nome do tema que está utilizando, que ficaria dentro da pasta:
 - VAR - WWW - HTML - WP-CONTENT - THEMES - (Nome do seu Tema) - functions.php
-5. As personalizações estarão disponíveis no painel de administração do WordPress.
+6. As personalizações estarão disponíveis no painel de administração do WordPress.
 
 ## 🐍 Fase 2: Desenvolvimento de Função Lambda em Python
 
