@@ -14,10 +14,10 @@ O `docker-compose.yml` está configurado para criar um ambiente com o WordPress 
 
 Na página de adicionar um novo post, no rodapé vai ter um campo chamado "Segundo autor" ao qual precisará preencher, e publicar o post. Assim quando fizer a requisição pelo POSTMAN por exemplo, na url:
 
-http://localhost:8000/?rest_route=/wp/v2/posts/1
+http://localhost:8000/?rest_route=/wp/v2/posts/{id}
 
 
-Receberá o campo     "segundo_autor": "Segundo Autor Teste" pelo JSON na requisição.
+Receberá o campo  "segundo_autor": "Segundo Autor Teste" pelo JSON na requisição.
 
 
 O arquivo `functions.php` foi modificado para adicionar funcionalidades personalizadas ao WordPress, como um campo fictício na página de inserção de posts e um menu personalizado chamado "Teste nScreen".
@@ -28,6 +28,8 @@ O arquivo `functions.php` foi modificado para adicionar funcionalidades personal
 2. Navegue até o diretório clonado.
 3. Execute o comando `docker-compose up -d` para iniciar os containers.
 4. Acesse `http://localhost:8000` para configurar o WordPress.
+5. Adicione as linhas que estão no arquivo functions.php para o arquivo com o mesmo nome do tema que está utilizando, que ficaria dentro da pasta:
+- VAR - WWW - HTML - WP-CONTENT - THEMES - (Nome do seu Tema) - functions.php
 5. As personalizações estarão disponíveis no painel de administração do WordPress.
 
 ## 🐍 Fase 2: Desenvolvimento de Função Lambda em Python
@@ -38,8 +40,8 @@ Os arquivos Python fornecidos são exemplos de funções Lambda que podem ser ex
 
 Para executar a função Lambda localmente:
 
-1. Navegue até o diretório contendo o arquivo `lambda_function.py`.
-2. Execute o arquivo com Python usando o comando `python lambda_function.py`.
+1. Navegue até o diretório contendo o arquivo `lambda_calcular_soma.py` ou `lambda.py`.
+2. Execute o arquivo com Python usando o comando `python lambda_function.py` ou `lambda.py`.
 3. O resultado será exibido no terminal.
 
 ## 🤝 Contribuições
